@@ -2,11 +2,14 @@
 
 ## Quick-start
 ```bash
-git clone https://github.com/patternfly/patternfly-react-seed # clone the project
-cd patternfly-react-seed # navigate into the project directory
+git clone https://github.com/rh-uxd/data-virtualization-training-workshop.git # clone the project
+cd data-virtualization-training-workshop # navigate into the project directory
 npm install # install patternfly-react-seed dependencies
+`npm run build` # build
 npm run start:dev # start the development server
 ```
+
+
 ## Development Scripts
 
 Install development/build dependencies
