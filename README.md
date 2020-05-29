@@ -11,6 +11,8 @@ npm run build # build
 npm run start:dev # start the development server
 ```
 
+Apicurio - Custom.png
+
 
 ## Development Scripts
 
