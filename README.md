@@ -1,6 +1,6 @@
 # Patternfly Data Virtualization Training Workshop
 
-
+![img](https://github.com/data-virtualization-training-workshop/blob/master/src/WorkshopDesign.png?raw=true)
 
 ## Quick-start
 ```bash
