@@ -1,6 +1,5 @@
 import React from 'react';
 import './dynamic-list.scss';
-import {} from '@patternfly/react-core';
 
 // const DynamicList = ({ content, ...props }) => {
 const DynamicList = (props) => {

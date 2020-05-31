@@ -1,5 +1,4 @@
 import React from 'react';
-import {} from '@patternfly/react-core';
 
 const DynamicListItem = (props) => {
   return (

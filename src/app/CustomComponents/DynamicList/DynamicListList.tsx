@@ -1,5 +1,4 @@
 import React from 'react';
-import {} from '@patternfly/react-core';
 
 const DynamicListList = (props) => {
   const id = 'app-list-' + props.type.toLowerCase();

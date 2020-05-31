@@ -11,12 +11,6 @@ import {
   SkipToContent
 } from '@patternfly/react-core';
 
-import {
-  DynamicList,
-  DynamicListList,
-  DynamicListListItem
-} from '../CustomComponents/DynamicList/DynamicList';
-
 import { routes } from '@app/routes';
 
 interface IAppLayout {
