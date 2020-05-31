@@ -4,13 +4,14 @@ import { Alert, PageSection } from '@patternfly/react-core';
 import { DynamicImport } from '@app/DynamicImport';
 import { accessibleRouteChangeHandler } from '@app/utils/utils';
 import { Dashboard } from '@app/Dashboard/Dashboard';
+import { ThemeDemo } from '@app/ThemeDemo/ThemeDemo';
 import { NotFound } from '@app/NotFound/NotFound';
 import { useDocumentTitle } from '@app/utils/useDocumentTitle';
 import { LastLocationProvider, useLastLocation } from 'react-router-last-location';
 
 let routeFocusTimer: number;
 
-const getSupportModuleAsync = () => () => import(/* webpackChunkName: 'support' */ '@app/Support/Support');
+// const getSupportModuleAsync = () => () => import(/* webpackChunkName: 'support' */ '@app/Support/Support');
 
 export interface IAppRoute {
   label?: string;
@@ -30,6 +31,14 @@ const routes: IAppRoute[] = [
     label: 'Dashboard',
     path: '/',
     title: 'PatternFly Seed | Main Dashboard'
+  },
+  {
+    component: ThemeDemo,
+    exact: true,
+    isAsync: true,
+    label: 'Theme demo',
+    path: '/theme-demo',
+    title: 'Theme demo'
   }
 ];
 
