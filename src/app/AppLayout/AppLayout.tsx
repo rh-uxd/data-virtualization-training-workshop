@@ -10,6 +10,7 @@ import {
   PageSidebar,
   SkipToContent
 } from '@patternfly/react-core';
+
 import { routes } from '@app/routes';
 
 interface IAppLayout {
