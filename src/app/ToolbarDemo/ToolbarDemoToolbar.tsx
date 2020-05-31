@@ -4,10 +4,10 @@ import {
   Button,
   DataToolbar,
   DataToolbarContent,
-  DataToolbarFilter,
   DataToolbarGroup,
   DataToolbarItem,
   DataToolbarToggleGroup,
+  Divider,
   Dropdown,
   DropdownItem,
   DropdownToggle,
@@ -33,11 +33,12 @@ import {
   SlidersHIcon
 } from '@patternfly/react-icons';
 
+import { ToolbarDemoTablePagination } from './ToolbarDemoTablePagination';
+
 const ToolbarDemoToolbar = () => {
   const [bulkSelectState, setBulkSelect] = useState(false);
   const [statusFilterState, setStatusFilter] = useState(false);
   const [systemFilterState, setSystemFilter] = useState(false);
-  const [severityFilterState, setSeverityFilter] = useState(false);
   const [overflowToggleState, setOverflowState] = useState(false);
   const [overflowToggleState2, setOverflowState2] = useState(false);
 
@@ -69,7 +70,9 @@ const ToolbarDemoToolbar = () => {
     { value: 'B', disabled: false },
   ];
 
-  /* <DataToolbarItem
+  /*
+  // Breakpoint mods
+  <DataToolbarItem
     breakpointMods={[
       {modifier: 'spacer-none'},
       {modifier: 'spacer-sm', breakpoint: 'md'},
@@ -208,21 +211,18 @@ const ToolbarDemoToolbar = () => {
         {overflowMenu2}
       </DataToolbarItem>
       <DataToolbarItem variant="pagination">
-        <Pagination
-          itemCount={2}
-          page={1}
-          perPage={20}
-          widgetId={`pagination-options-menu-bottom`}
-          isCompact
-        />
+        <ToolbarDemoTablePagination compact="true" />
       </DataToolbarItem>
     </React.Fragment>
   );
 
   return (
-    <DataToolbar id="toolbar-demo-toolbar" collapseListedFiltersBreakpoint='xl'>
-      <DataToolbarContent>{items}</DataToolbarContent>
-    </DataToolbar>
+    <React.Fragment>
+      <DataToolbar collapseListedFiltersBreakpoint='xl'>
+        <DataToolbarContent>{items}</DataToolbarContent>
+      </DataToolbar>
+      <Divider />
+    </React.Fragment>
   );
 }
 
