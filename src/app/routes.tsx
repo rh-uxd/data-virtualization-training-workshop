@@ -4,6 +4,8 @@ import { Alert, PageSection } from '@patternfly/react-core';
 import { DynamicImport } from '@app/DynamicImport';
 import { accessibleRouteChangeHandler } from '@app/utils/utils';
 import { Dashboard } from '@app/Dashboard/Dashboard';
+import { ToolbarDemo } from '@app/ToolbarDemo/ToolbarDemo';
+import { ThemeDemo } from '@app/ThemeDemo/ThemeDemo';
 import { NotFound } from '@app/NotFound/NotFound';
 import { useDocumentTitle } from '@app/utils/useDocumentTitle';
 import { LastLocationProvider, useLastLocation } from 'react-router-last-location';
@@ -30,6 +32,22 @@ const routes: IAppRoute[] = [
     label: 'Dashboard',
     path: '/',
     title: 'PatternFly Seed | Main Dashboard'
+  },
+  {
+    component: ToolbarDemo,
+    exact: true,
+    isAsync: true,
+    label: 'Toolbar demo',
+    path: '/toolbar-demo',
+    title: 'Toolbar demo'
+  },
+  {
+    component: ThemeDemo,
+    exact: true,
+    isAsync: true,
+    label: 'Theme demo',
+    path: '/theme-demo',
+    title: 'Theme demo'
   }
 ];
 
