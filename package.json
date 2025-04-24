@@ -82,7 +82,7 @@
     "@patternfly/react-icons": "^4.1.1",
     "@patternfly/react-styles": "^4.1.1",
     "express": "^4.13.4",
-    "react-router-dom": "^5.0.1",
+    "react-router-dom": "^7.5.2",
     "react-router-last-location": "^2.0.1"
   }
 }
